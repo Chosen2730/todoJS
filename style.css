@@ -27,13 +27,15 @@ svg {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
-  min-width: 50%;
-  max-width: 75%;
+  max-width: 90%;
+  min-width: 80%;
   box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   margin: 4rem auto;
 }
-
+.todo__date {
+  text-transform: capitalize;
+}
 .todo__header {
   height: 100px;
 }
@@ -71,7 +73,7 @@ svg {
 
 .todo__text {
   margin-left: 5px;
-  font-size: 15px;
+  font-size: 1rem;
   width: 90%;
   word-wrap: break-word;
 }
@@ -121,10 +123,4 @@ svg {
 .close {
   width: 5%;
   margin-left: auto;
-}
-@media (max-width: 450px) {
-  .todo {
-    min-width: 80%;
-    max-width: 95%;
-  }
 }

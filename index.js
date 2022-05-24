@@ -25,6 +25,38 @@ const xlinkns = "http://www.w3.org/1999/xlink";
 //     .querySelector('.todo__create')
 //     .addEventListener('click', () => addItemFromInput());
 // });
+const days = [
+  "sunday",
+  "monday",
+  "tuesday",
+  "wednessday",
+  "thursday",
+  "friday",
+  "saturday",
+];
+
+const months = [
+  "january",
+  "february",
+  "march",
+  "april",
+  "may",
+  "june",
+  "july",
+  "august",
+  "september",
+  "october",
+  "november",
+  "december",
+];
+const weekday = document.querySelector(".todo__weekday");
+const date = document.querySelector(".todo__fulldate");
+
+const d = new Date();
+const today = `${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}  `;
+
+weekday.innerHTML = days[new Date().getDay()];
+date.innerHTML = today;
 
 const inputValue = document.querySelector(".todo__input");
 
